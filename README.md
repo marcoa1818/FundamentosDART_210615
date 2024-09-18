@@ -11,7 +11,7 @@ Proyecto de Clase para la Unidad 1 dela Asignatura de Desarrollo Móvil Integral
 |2|Instalación y Configuración del Entorno de Desarrollo de Flutter/Dart|23|Finalizada|
 |3|Hola Mundo desde DART|10|Finalizada|
 |4|Tipos de datos en Dart|5|Finalizada|
-|5|Tipo de Dato Dinamico|5|Activa|
+|5|Tipo de Dato Dinamico|5|Finalizada|
 
 
 
