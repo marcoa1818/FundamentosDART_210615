@@ -16,7 +16,7 @@ Proyecto de Clase para la Unidad 1 dela Asignatura de Desarrollo Móvil Integral
 |7|Listas, Iterables y Conjuntos de Datos|9|Finalizada|
 |8|Funciones y parametros|11|Finalizada|
 |9|Clases|10|Finalizada|
-|10|Constructores Nombrados|Por definir|Activa|
+|10|Constructores Nombrados|8|Activa|
 
 
 
