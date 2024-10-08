@@ -17,8 +17,9 @@ Proyecto de Clase para la Unidad 1 dela Asignatura de Desarrollo Móvil Integral
 |8|Funciones y parametros|11|Finalizada|
 |9|Clases|10|Finalizada|
 |10|Constructores Nombrados|8|Finalizada|
-|11|Setters y Getters|9|Activa|
-
+|11|Setters y Getters|9|Finalizada|
+|12|Aserciones|3|Activa|
+|13|Clases Abstractas|11|Activa|
 
 
 ### LISTA DE HERRAMIENTAS
