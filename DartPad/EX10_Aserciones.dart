@@ -27,3 +27,4 @@ class Square {
   return _side * _side;
   }
 }
+

@@ -77,11 +77,11 @@ final patoMandarin = PatoMandarin ();
   patoMandarin.ascender(30);
   patoMandarin.descender("5 km/h");
   patoMandarin.caminar();
-  patoMandarin.correr();
-  patoMandarin.trotar();
-  patoMandarin.saltar();
+  patoMandarin.correr(10.5);
+  patoMandarin.trotar(true);
+  patoMandarin.saltar(false);
   patoMandarin.nadar();
-  patoMandarin.sumergir();
-  patoMandarin.respirar();
+  patoMandarin.sumergir(1);
+  patoMandarin.respirar(false);
   
 }
