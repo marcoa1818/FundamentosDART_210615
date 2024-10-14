@@ -22,9 +22,10 @@ Proyecto de Clase para la Unidad 1 dela Asignatura de Desarrollo Móvil Integral
 |13|Clases Abstractas|11|Activa|
 |14|Mixins|11|Activa|
 |15|Futures|11|Activa|
-|16|Future async await|pendiente|Activa|
-|17|Future try catch and finally|pendiente|Activa|
-|18|Stream|pendiente|Activa|
+|16|Future async await|Pendiente|Activa|
+|17|Future try catch and finally|Pendiente|Activa|
+|18|Streams|Pendiente|Activa|
+|19|Streams and await|Pendiente|Activa|
 
 
 ### LISTA DE HERRAMIENTAS
