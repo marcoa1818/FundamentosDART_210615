@@ -20,6 +20,8 @@ Proyecto de Clase para la Unidad 1 dela Asignatura de Desarrollo Móvil Integral
 |11|Setters y Getters|9|Finalizada|
 |12|Aserciones|3|Activa|
 |13|Clases Abstractas|11|Activa|
+|14|Mixins|11|Activa|
+|15|Futures|11|Activa|
 
 
 ### LISTA DE HERRAMIENTAS
