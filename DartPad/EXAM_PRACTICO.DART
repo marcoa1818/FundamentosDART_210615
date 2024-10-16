@@ -1,7 +1,11 @@
+// MARCO ANTONIO MORALES RIVERA M-210615 10B IDGS
+
 void main() {
+  
   // CASO DE PRUEBA 1 -- NUEVO MIEMBRO QUE SE REGISTRA HOY
+  
   final miembro1 = Miembro(
-    ID: 201,
+    ID: 100,
     tituloCortesia: "Ing.",
     nombre: "Marco",
     primerApellido: "Morales",
@@ -17,30 +21,32 @@ void main() {
   print(miembro1);
 
   // CASO DE PRUEBA 2 -- MIEMBRO QUE RENUEVA SU MEMBRESÍA
+  
   final miembro2 = Miembro(
-    ID: 202,
-    tituloCortesia: "Dr.",
+    ID: 101,
+    tituloCortesia: "Lic.",
     nombre: "Mario",
     primerApellido: "Gutierrez",
     segundoApellido: "Rosales",
-    fechaNacimiento: DateTime(1980, 01, 28), 
+    fechaNacimiento: DateTime(2003, 10, 18), 
     fotografia: "url/foto4.jpg",
     genero: "M", 
-    tipoSangre: "AB-",
+    tipoSangre: "O-",
     membresiaID: 4,
     usuarioID: 4,
-    tipoMembresia: "Anual",
+    tipoMembresia: "Mensual",
   );
   print(miembro2);
 
   // CASO DE PRUEBA 3 -- CANCELANDO LA MEMBRESÍA DE UN MIEMBRO
+  
   print("Cancelando la membresía del miembro 2:");
   miembro2.cancelaSuscripcion();
   print(miembro2);
 }
 
 // Clase abstracta <Persona>
-// Representa una estructura básica para una persona con atributos comunes.
+
 abstract class Persona {
   int ID; 
   String? tituloCortesia; 
@@ -55,6 +61,7 @@ abstract class Persona {
   DateTime? fechaActualizacion; 
 
   // Constructor de la clase abstracta Persona
+  
   Persona({
     required this.ID,
     this.tituloCortesia,
@@ -75,6 +82,7 @@ abstract class Persona {
 }
 
 // Clase <Miembro> que extiende de <Persona>
+
 // Representa a un miembro del gimnasio, con datos específicos de su membresía.
 class Miembro extends Persona {
   int membresiaID; 
@@ -84,6 +92,7 @@ class Miembro extends Persona {
   bool estatus; 
 
   // Constructor de la clase Miembro
+  
   Miembro({
     required int ID,
     String? tituloCortesia,
@@ -97,7 +106,7 @@ class Miembro extends Persona {
     required this.membresiaID,
     required this.usuarioID,
     required this.tipoMembresia,
-    this.estatus = true, // El miembro está activo por defecto
+    this.estatus = true,
     DateTime? fechaRegistro,
     DateTime? fechaActualizacion,
   })  : antiguedad = "${DateTime.now().difference(fechaRegistro ?? DateTime.now()).inDays ~/ 30} meses", // Calcula la antigüedad en meses
@@ -155,7 +164,6 @@ class Miembro extends Persona {
             "${fechaRegistro.hour.toString().padLeft(2, '0')}:${fechaRegistro.minute.toString().padLeft(2, '0')}";
 
     return """
-    --------------------------------------------------------
     DATOS DEL MIEMBRO
     --------------------------------------------------------
     ID: $ID
@@ -166,24 +174,7 @@ class Miembro extends Persona {
     Antigüedad: $antiguedad
     Fecha de registro: $formattedFechaRegistro
     Estatus: ${estatus ? 'Activo' : 'Inactivo'}
-    --------------------------------------------------------
+  
     """;
   }
 }
-
-/*
-Resumen de las clases abstractas:
-
-1. Las clases abstractas, como `Persona`, son clases que no se pueden instanciar directamente.
-- Estas sirven como base para otras clases.
-- Definen atributos y métodos comunes que deberán ser implementados o sobrescritos en las clases hijas.
-
-2. Los métodos abstractos, como `cancelaSuscripcion`, son métodos que no tienen implementación en la clase abstracta.
-- Las clases hijas deben sobrescribir estos métodos y proporcionar su implementación concreta.
-
-3. En este código, la clase `Persona` es una clase abstracta que define los atributos básicos de una persona, como nombre, apellidos, género, etc., pero deja ciertos comportamientos, como cancelar suscripción, para que las clases hijas lo implementen.
-   
-4. La clase `Miembro` extiende de `Persona` y es responsable de implementar el comportamiento específico relacionado con los miembros del gimnasio, como cancelar suscripción, calcular antigüedad, actualizar la membresía, etc.
-
-Las clases abstractas promueven la reutilización del código y ayudan a definir una estructura clara y flexible para las entidades dentro del sistema.
-*/
