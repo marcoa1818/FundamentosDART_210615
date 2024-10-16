@@ -18,14 +18,14 @@ Proyecto de Clase para la Unidad 1 dela Asignatura de Desarrollo Móvil Integral
 |9|Clases|10|Finalizada|
 |10|Constructores Nombrados|8|Finalizada|
 |11|Setters y Getters|9|Finalizada|
-|12|Aserciones|3|Activa|
-|13|Clases Abstractas|11|Activa|
-|14|Mixins|11|Activa|
-|15|Futures|11|Activa|
-|16|Future async await|Pendiente|Activa|
-|17|Future try catch and finally|Pendiente|Activa|
-|18|Streams|Pendiente|Activa|
-|19|Streams and await|Pendiente|Activa|
+|12|Aserciones|3|Finalizada|
+|13|Clases Abstractas|11|Finalizada|
+|14|Mixins|11|Finalizada|
+|15|Futures|11|Finalizada|
+|16|Async await|5|Activa|
+|17|Try catch and finally|6|Activa|
+|18|Streams|6|Activa|
+|19|Streams and await|4|Activa|
 
 
 ### LISTA DE HERRAMIENTAS
